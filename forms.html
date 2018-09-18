@@ -1,50 +1,293 @@
 <!DOCTYPE html>
   <html>
     <head>
-      <!--Import Google Icon Font-->
-      <link rel="stylesheet" href="css/material-icons.css">
-      <!--Import materialize.css-->
-      <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
-      <!--Let browser know website is optimized for mobile-->
-      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <!--Import Google Icon Font
+        ------------------------------------------------------------------>
+        <link rel="stylesheet" href="css/material-icons.css">
+        <!--Import materialize.css
+        ------------------------------------------------------------------>
+        <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+        <!--Import custom styles
+        ------------------------------------------------------------------>
+        <link type="text/css" rel="stylesheet" href="css/styles.css"  media="screen,projection"/>
+        <!--Let browser know website is optimized for mobile
+        ------------------------------------------------------------------>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     </head>
 
-    <body>
-        <!-- Main -->
-        <main class="container section">
-            <div class="row">
-                <div class="col s12">
-                    <form>
-                        <div class="card-panel section hoverable">
-                            <div class="row">
-                                <div class="input-field s6">
-                                    <input type="text" id="name" name="name" class="validate" required>
-                                    <label for="name">Nombre:</label>
-                                </div>
-                                <div class="input-field s6">
-                                    <input type="text" id="lastname" name="lastname" class="validate" required>
-                                    <label for="lastname">Apellidos:</label>
-                                </div>
+    <body class="grey lighten-3">
+        <!-- Navbar
+        ------------------------------------------------------------------>
+        <!-- Dropdown Structure
+        ------------------------------------------------------------------>
+        <ul id="dropdown1" class="dropdown-content">
+            <li><a href="#!" class="grey-text">Account</a></li>
+            <li class="divider"></li>
+            <li><a href="#!" class="grey-text">Session</a></li>
+        </ul>
+        <!-- End Dropdown Structure
+        ------------------------------------------------------------------>
+        <div class="navbar-fixed">
+            <nav>
+                <div class="nav-wrapper blue">
+                    <a href="#" class="brand-logo center hide-on-small-only">Material Admin</a>
+                    <a href="#" class="brand-logo center hide-on-med-and-up"><small>Material Admin</small></a>
+                    <a href="#" data-target="slide-out" class="sidenav-trigger show-on-large"><i class="material-icons">menu</i></a>
+                    <ul id="nav-mobile" class="right hide-on-med-and-down">
+                        <!-- Dropdown Trigger -->
+                        <li><a class="dropdown-trigger" href="#!" data-target="dropdown1"><i class="material-icons">more_vert</i></a></li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+        <!--End Navbar
+        ------------------------------------------------------------------>
+        
+        <!--Sidenav
+        ------------------------------------------------------------------>
+        <div class="container section">
+                <ul id="slide-out" class="sidenav">
+                    <li>
+                        <div class="user-view">
+                            <div class="background">
+                                <img src="images/studio-republic-644339-unsplash.jpg">
                             </div>
-                            <div class="row">
-                                <div class="input-field col s12">
-                                    <i class="material-icons prefix">email</i>
-                                    <input type="email" name="email" id="email" class="validate" required>
-                                    <label for="email">Correo electronico:</label>
-                                    <span class="helper-text" data-error="Formato equivocado" data-success="Formato correcto"></span>
-                                </div>
-                            </div>
-                            <div class="row center">
-                                <button type="submit" class="btn blue waves-effect waves-light"><i class="material-icons right">save</i> Guardar</button>
-                            </div>
+                            <a href="#user"><img class="circle" src="images/marcus-vorwaller-334251-unsplash.jpg"></a>
+                            <a href="#name"><span class="white-text name">John Doe</span></a>
+                            <a href="#email"><span class="white-text email">jhondoe@mail.com</span></a>
                         </div>
-                    </form>
+                    </li>
+                    <li><a class="waves-effect" href="#!"><i class="material-icons">account_circle</i>Jhon Doe</a></li>
+                    <li><a class="waves-effect" href="#!"><i class="material-icons">settings</i> Settings</a></li>
+                    <li><div class="divider"></div></li>
+                    <li><a class="subheader">Application</a></li>
+                    <li><a class="waves-effect" href="#!"><i class="material-icons">people</i> Users</a></li>
+                    <li><a class="waves-effect" href="#!"><i class="material-icons">view_modules</i> Inventory</a></li>
+                    <li><a class="waves-effect" href="#!"><i class="material-icons">attach_money</i> Sales</a></li>
+                    <li><a class="subheader">Templates</a></li>
+                    <li><div class="divider"></div></li>
+                    <li><a class="waves-effect" href="index.html"><i class="material-icons">dashboard</i> Dashboard</a></li>
+                    <li><a class="waves-effect" href="login.html"><i class="material-icons">lock</i> Login</a></li>
+                    <li><a class="waves-effect" href="register.html"><i class="material-icons">edit</i> Register</a></li>
+                    <li><a class="waves-effect" href="blank.html"><i class="material-icons">filter_none</i> Blank</a></li>
+                    <li><a class="waves-effect" href="floating-button-1.html"><i class="material-icons">add_circle</i> Floating Button #1</a></li>
+                    <li><a class="waves-effect" href="floating-button-2.html"><i class="material-icons">add_circle_outline</i> Floating Button #2</a></li>
+                    <li><a class="waves-effect" href="forms.html"><i class="material-icons">create</i> Forms</a></li>
+                    <li><a class="waves-effect" href="tables.html"><i class="material-icons">table_chart</i> Tables</a></li>
+                    <li><a class="waves-effect" href="graphs.html"><i class="material-icons">timeline</i> Graphs</a></li>
+                    <li><a class="waves-effect" href="modals.html"><i class="material-icons">select_all</i> Modals</a></li>
+                    <li><a class="waves-effect" href="toasts.html"><i class="material-icons">notification_important</i> Toasts</a></li>
+                    <li><a class="waves-effect" href="landing-page.html"><i class="material-icons">view_carousel</i> Landing Page</a></li>
+                </ul>
+                <!-- <a href="#" data-target="slide-out" class="sidenav-trigger"><i class="material-icons">menu</i></a> -->
+        </div>
+        <!--End Sidenav
+        ------------------------------------------------------------------>
+
+        <!-- Main
+        ------------------------------------------------------------------>
+        <main>
+                
+            <div class="row">
+                <div class="col s12 m12 l12">
                 </div>
             </div>
+            <div class="row">
+                <div class="col s12 m12 l12">
+                    <div class="">
+                        <div class="card white z-depth-3">
+                            <div class="card-content grey-text">
+                                <h5 class="header">Forms <!--Tools -->
+                                <a class='dropdown-trigger btn-flat right' href='#' data-target='tools'><i class="grey-text material-icons">vertical_split</i></a></h5>
+                                <!-- Tools Ul -->
+                                <ul id='tools' class='dropdown-content'>
+                                    <li><a href="#!"><i class="material-icons">add</i>add</a></li>
+                                    <li class="divider" tabindex="-1"></li>
+                                    <li><a href="#!"><i class="material-icons">dashboard</i>menu</a></li>
+                                </ul>
+                            </div>
+                            <hr>
+                            <!-- Content
+                            ------------------------------------------------------------------>
+                            
+                            <!-- Forms
+                            ------------------------------------------------------------------>
+                            <div class="row">
+                                
+                                <div class="col s12 m6 l6">
+                                    <!-- Basic Form
+                                    ------------------------------------------------------------------>
+                                    <div class="section hoverable">
+                                        <div class="row">
+                                            <div class="col s12">
+                                                <form>
+                                                    <div class="container section">
+                                                        <div class="row">
+                                                            <h5 class="center">Basic Form</h5>
+                                                            <div class="col input-field s12 m12 l12">
+                                                                <input type="text" id="name" name="name" class="validate" required autofocus>
+                                                                <label for="name">Name:</label>
+                                                                <span class="helper-text" data-error="wrong" data-success="right"></span>
+                                                            </div>
+                                                            <div class="col input-field s12 m12 l12">
+                                                                <input type="text" id="lastname" name="lastname" class="validate" required>
+                                                                <label for="lastname">Lastname:</label>
+                                                                <span class="helper-text" data-error="wrong" data-success="right"></span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="row">
+                                                            <div class="input-field col s12">
+                                                                <!-- <i class="material-icons prefix">email</i> -->
+                                                                <input type="email" name="email" id="email" class="validate" required>
+                                                                <label for="email">Email:</label>
+                                                                <span class="helper-text" data-error="Formato equivocado" data-success="Formato correcto"></span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="row center">
+                                                            <button type="submit" class="btn blue waves-effect waves-light"><i class="material-icons right">save</i> Save</button>
+                                                        </div>
+                                                    </div>
+                                                </form>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!--End Basic Form
+                                    ------------------------------------------------------------------>
+                                </div>
+
+                                <div class="col s12 m6 l6">
+                                    <!-- Row Form
+                                    ------------------------------------------------------------------>
+                                    <div class="section hoverable">
+                                        <div class="row">
+                                            <div class="col s12">
+                                                <form>
+                                                    <div class="container section">
+                                                        <div class="row">
+                                                            <h5 class="center">Rows Form</h5>
+                                                            <div class="col input-field s12 m6 l6">
+                                                                <input type="text" id="name" name="name" class="validate" required autofocus>
+                                                                <label for="name">Name:</label>
+                                                                <span class="helper-text" data-error="wrong" data-success="right"></span>
+                                                            </div>
+                                                            <div class="col input-field s12 m6 l6">
+                                                                <input type="text" id="lastname" name="lastname" class="validate" required>
+                                                                <label for="lastname">Lastname:</label>
+                                                                <span class="helper-text" data-error="wrong" data-success="right"></span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="row">
+                                                            <div class="input-field col s12 m6 l6">
+                                                                <!-- <i class="material-icons prefix">email</i> -->
+                                                                <input type="email" name="email" id="email" class="validate" required>
+                                                                <label for="email">Email:</label>
+                                                                <span class="helper-text" data-error="wrong" data-success="correct"></span>
+                                                            </div>
+                                                            <div class="input-field col s12 m6 l6">
+                                                                <!-- <i class="material-icons prefix">email</i> -->
+                                                                <input type="email" name="email" id="email" class="validate" required>
+                                                                <label for="email">Confirm Email:</label>
+                                                                <span class="helper-text" data-error="wrong" data-success="correct"></span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="row center">
+                                                            <button type="submit" class="btn blue waves-effect waves-light"><i class="material-icons right">save</i> Save</button>
+                                                        </div>
+                                                    </div>
+                                                </form>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!--End Row Form
+                                    ------------------------------------------------------------------>
+                                </div>
+
+                            </div>
+
+                            <div class="row">
+                                <div class="col s12 m12 l12">
+                                    <div class="container section">
+                                            <form>
+                                                <div class=" section">
+                                                    <div class="row">
+                                                        <h5 class="center">Mix Form with Prefixes</h5>
+                                                        <div class="col input-field s12 m6 l6">
+                                                            <i class="material-icons prefix">face</i>
+                                                            <input type="text" id="name" name="name" class="validate" required autofocus>
+                                                            <label for="name">Name:</label>
+                                                            <span class="helper-text" data-error="wrong" data-success="right"></span>
+                                                        </div>
+                                                        <div class="col input-field s12 m6 l6">
+                                                            <i class="material-icons prefix">assignment_ind</i>
+                                                            <input type="text" id="lastname" name="lastname" class="validate" required>
+                                                            <label for="lastname">Lastname:</label>
+                                                            <span class="helper-text" data-error="wrong" data-success="right"></span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="row">
+                                                        <div class="input-field col s12 m12 l12">
+                                                            <i class="material-icons prefix">email</i>
+                                                            <input type="email" name="email" id="email" class="validate" required>
+                                                            <label for="email">Email:</label>
+                                                            <span class="helper-text" data-error="wrong" data-success="correct"></span>
+                                                        </div>
+                                                        <div class="input-field col s12 m12 l12">
+                                                            <i class="material-icons prefix">keyboard</i>
+                                                            <input type="email" name="email" id="email" class="validate" required>
+                                                            <label for="email">Confirm Email:</label>
+                                                            <span class="helper-text" data-error="wrong" data-success="correct"></span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="row center">
+                                                        <button type="submit" class="btn blue waves-effect waves-light"><i class="material-icons right">save</i> Save</button>
+                                                    </div>
+                                                </div>
+                                            </form>
+                                    </div>
+                                </div>
+                            </div>
+
+                            
+                            
+                            <!-- Forms
+                            ------------------------------------------------------------------>
+
+                            <!--End Content
+                            ------------------------------------------------------------------>
+                        </div>
+                    </div>
+                </div>       
+            </div>
+
         </main>
-        <!-- End Main -->
-            
-    <!--JavaScript at end of body for optimized loading-->
-    <script type="text/javascript" src="js/materialize.min.js"></script>
+        <!-- End Main
+        ------------------------------------------------------------------>
+
+        <!-- Footer
+        ------------------------------------------------------------------>
+
+        <footer class="page-footer grey darken-3">
+            <div class="container">
+                <div class="section">
+                © 2018 Copyright 
+                <a class="grey-text text-lighten-4 right" href="#!">a feature of Fraction Framework PHP</a>
+                </div>
+            </div>
+        </footer>
+
+        <!--End Footer
+        ------------------------------------------------------------------>
+    
+        <!--JavaScript at end of body for optimized loading
+        ------------------------------------------------------------------>
+        <script type="text/javascript" src="js/materialize.min.js"></script>
+        <!--End JavaScript at end of body for optimized loading
+        ------------------------------------------------------------------>
+        <script>
+            document.addEventListener('DOMContentLoaded', function() {
+                
+                M.AutoInit();
+            });
+        </script>
     </body>
   </html>
