@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+  <html>
+    <head>
+      <!--Import Google Icon Font-->
+      <link rel="stylesheet" href="css/material-icons.css">
+      <!--Import materialize.css-->
+      <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+      <!--Let browser know website is optimized for mobile-->
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    </head>
+
+    <body>
+        <!-- Main -->
+
+        <div class="container section">
+            <div class="row">
+                <div class="col s12 center container section">
+                    <!-- Table to Emulate a Crud -->
+                    <h1><i class="material-icons" style="font-size:50px">people</i> Users</h1>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>User</th>
+                                <th>Email</th>
+                                <th>Rol</th>
+                                <th>Delete</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr id="response">
+                                <td>Jhon Doe</td>
+                                <td>jhondoe@mail.com</td>
+                                <td>Admin</td>
+                                <td>
+                                    <a onclick="displayToast()" class="waves-effect waves-light btn red modal-trigger" href="#modal1">
+                                        <i class="material-icons">delete</i>
+                                    </a>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+            
+    <!--JavaScript at end of body for optimized loading-->
+    <script type="text/javascript" src="js/materialize.min.js"></script>
+    <script>
+        function displayToast(){
+            M.toast(
+                {
+                    html: '<i class="material-icons">check</i> Operación exitosa!',
+                    displayLength: 1000,
+                    classes: 'blue',
+                    completeCallback: function(){fakeDelete()}
+                }
+            );
+        }
+        function fakeDelete(){
+            alert('This is a callback... could send a delete with Ajax or Fetch\n or just erase the completeCallback option of the toast\n to delete directly form the backend');
+            const resp = document.getElementById('response');
+            resp.innerHTML = '';
+        }
+    </script>
+    </body>
+  </html>

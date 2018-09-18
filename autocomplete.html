@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!--Import Google Icon Font-->
+    <link rel="stylesheet" href="css/material-icons.css">
+    <!--Import materialize.css-->
+    <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+    <!-- Title -->
+    <title>Autocomplete</title>
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+</head>
+
+    <body>
+        <div class="container section">
+            <div class="row">
+                <div class="col s12 center">
+                    <div class="row">
+                        <div class="col s12">
+                            <div class="row">
+                                <!-- Search box -->
+                                <div class="input-field col s12">
+                                    <i class="material-icons prefix">search</i>
+                                    <input type="text" id="autocomplete-input" class="autocomplete">
+                                    <label for="autocomplete-input">Buscar...</label>
+                                </div>
+                                <!-- End Search box -->
+                            </div>
+                            <!-- Section to response the autocomplete -->
+                            <div class="row section">
+                                <div class="col s12 center">
+                                    <div id="resp">
+                                        <!-- Here load data from autocomplete -->
+                                    </div>
+                                </div>
+                            </div>
+                            <!--End Section to response the autocomplete -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--JavaScript at end of body for optimized loading-->
+        <script type="text/javascript" src="js/materialize.min.js"></script>
+        <!-- JavaScript to load the autocomplete function -->
+        <script>
+            //autocomplete field
+            var elems = document.querySelectorAll('.autocomplete');
+            var instances = M.Autocomplete.init(elems,{
+                data: {
+                    "Apple": null,
+                    "Microsoft": null,
+                    "Google": 'https://placehold.it/250x250'
+                    },
+                    onAutocomplete: function(texto){
+                        console.log('Diste click en '+texto);
+                        resp.innerHTML = "<h3>Seleccionaste el elemento "+texto+"</h3>";
+                    }
+            });
+            const resp = document.getElementById('resp');
+        </script>
+        <!--End JavaScript to load the autocomplete function -->
+    </body>
+</html>

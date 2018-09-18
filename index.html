@@ -1,27 +1,46 @@
 <!DOCTYPE html>
   <html>
     <head>
-      <!--Import Google Icon Font-->
-      <link rel="stylesheet" href="css/material-icons.css">
-      <!-- <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"> -->
-      <!--Import materialize.css-->
-      <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
-
-      <!--Let browser know website is optimized for mobile-->
-      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <!--Import Google Icon Font
+        ------------------------------------------------------------------>
+        <link rel="stylesheet" href="css/material-icons.css">
+        <!--Import materialize.css
+        ------------------------------------------------------------------>
+        <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+        <!--Let browser know website is optimized for mobile
+        ------------------------------------------------------------------>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     </head>
 
+    <style>
+          body {
+            display: flex;
+            min-height: 100vh;
+            flex-direction: column;
+        }
+
+        main {
+            flex: 1 0 auto;
+        }
+    </style>
+
     <body>
-        <!-- Dropdown Structure -->
+        <!-- Navbar
+        ------------------------------------------------------------------>
+        <!-- Dropdown Structure
+        ------------------------------------------------------------------>
         <ul id="dropdown1" class="dropdown-content">
             <li><a href="#!" class="grey-text">Account</a></li>
             <li class="divider"></li>
             <li><a href="#!" class="grey-text">Session</a></li>
         </ul>
+        <!-- End Dropdown Structure
+        ------------------------------------------------------------------>
         <div class="navbar-fixed">
             <nav>
                 <div class="nav-wrapper blue">
-                    <a href="#" class="brand-logo center">Logo</a>
+                    <a href="#" class="brand-logo center hide-on-small-only">Material Admin</a>
+                    <a href="#" class="brand-logo center hide-on-med-and-up"><small>Material Admin</small></a>
                     <a href="#" data-target="slide-out" class="sidenav-trigger show-on-large"><i class="material-icons">menu</i></a>
                     <ul id="nav-mobile" class="right hide-on-med-and-down">
                         <!-- Dropdown Trigger -->
@@ -30,193 +49,279 @@
                 </div>
             </nav>
         </div>
+        <!--End Navbar
+        ------------------------------------------------------------------>
+        
+        <!--Sidenav
+        ------------------------------------------------------------------>
         <div class="container section">
                 <ul id="slide-out" class="sidenav">
-                <li>
-                    <div class="user-view">
-                        <div class="background">
-                            <img src="images/studio-republic-644339-unsplash.jpg">
+                    <li>
+                        <div class="user-view">
+                            <div class="background">
+                                <img src="images/studio-republic-644339-unsplash.jpg">
+                            </div>
+                            <a href="#user"><img class="circle" src="images/marcus-vorwaller-334251-unsplash.jpg"></a>
+                            <a href="#name"><span class="white-text name">John Doe</span></a>
+                            <a href="#email"><span class="white-text email">jhondoe@mail.com</span></a>
                         </div>
-                        <a href="#user"><img class="circle" src="images/marcus-vorwaller-334251-unsplash.jpg"></a>
-                        <a href="#name"><span class="white-text name">John Doe</span></a>
-                        <a href="#email"><span class="white-text email">jdandturk@gmail.com</span></a>
-                    </div>
-                </li>
-                <li><a href="#!"><i class="material-icons">cloud</i>First Link With Icon</a></li>
-                <li><a href="#!">Second Link</a></li>
-                <li><div class="divider"></div></li>
-                <li><a class="subheader">Subheader</a></li>
-                <li><a class="waves-effect" href="#!">Third Link With Waves</a></li>
+                    </li>
+                    <li><a class="waves-effect" href="#!"><i class="material-icons">account_circle</i>Jhon Doe</a></li>
+                    <li><a class="waves-effect" href="#!"><i class="material-icons">settings</i> Settings</a></li>
+                    <li><div class="divider"></div></li>
+                    <li><a class="subheader">Application</a></li>
+                    <li><a class="waves-effect" href="#!"><i class="material-icons">people</i> Users</a></li>
+                    <li><a class="waves-effect" href="#!"><i class="material-icons">view_modules</i> Inventory</a></li>
+                    <li><a class="waves-effect" href="#!"><i class="material-icons">attach_money</i> Sales</a></li>
+                    <li><a class="subheader">Templates</a></li>
+                    <li><div class="divider"></div></li>
+                    <li><a class="waves-effect" href="#!"><i class="material-icons">dashboard</i> Dashboard</a></li>
+                    <li><a class="waves-effect" href="#!"><i class="material-icons">lock</i> Login</a></li>
+                    <li><a class="waves-effect" href="#!"><i class="material-icons">edit</i> Register</a></li>
+                    <li><a class="waves-effect" href="#!"><i class="material-icons">filter_none</i> Blank</a></li>
+                    <li><a class="waves-effect" href="#!"><i class="material-icons">add_circle</i> Floating Button #1</a></li>
+                    <li><a class="waves-effect" href="#!"><i class="material-icons">add_circle_outline</i> Floating Button #2</a></li>
+                    <li><a class="waves-effect" href="#!"><i class="material-icons">create</i> Forms</a></li>
+                    <li><a class="waves-effect" href="#!"><i class="material-icons">table_chart</i> Tables</a></li>
+                    <li><a class="waves-effect" href="#!"><i class="material-icons">timeline</i> Graphs</a></li>
+                    <li><a class="waves-effect" href="#!"><i class="material-icons">select_all</i> Modals</a></li>
+                    <li><a class="waves-effect" href="#!"><i class="material-icons">notification_important</i> Toasts</a></li>
+                    <li><a class="waves-effect" href="#!"><i class="material-icons">view_carousel</i> Landing Page</a></li>
                 </ul>
                 <!-- <a href="#" data-target="slide-out" class="sidenav-trigger"><i class="material-icons">menu</i></a> -->
         </div>
-        <div class="container section">
-            <div class="row section">
-                <div class="col s12 center">
-                    <div class="slider">
-                        <ul class="slides">
-                            <li>
-                                <img src="images/rawpixel-783344-unsplash.jpg"> <!-- random image -->
-                                <div class="caption left-align">
-                                    <h3>Nuestro equipo</h3>
-                                    <h5 class="light grey-text text-lighten-3">Contamos con expertos en cada uno de las tecnologias mas utilizadas al dia de hoy.</h5>
-                                </div>
-                            </li>
-                            <li>
-                                <img src="images/hack-capital-568971-unsplash.jpg"> <!-- random image -->
-                                <div class="caption right-align">
-                                    <h3>Equipos by taskforce</h3>
-                                    <h5 class="light grey-text text-lighten-3">Contamos con equipos de Frontend, Backend, Mobile.</h5>
-                                </div>
-                            </li>
-                            <li>
-                                <img src="images/nikolay-tarashchenko-748663-unsplash.jpg"> <!-- random image -->
-                                <div class="caption center-align">
-                                    <h3>Dejanos crear algo impresionante juntos!</h3>
-                                    <h5 class="light grey-text text-lighten-3">Nosotros nos encargamos del trabajo duro.</h5>
-                                </div>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-            <div class="row section">
-                <div class="col s6 center">
-                    <img class="materialboxed responsive-img" height="650" src="images/maximilian-weisbecker-544039-unsplash.jpg">
-                </div>
-                <div class="col s6 center">
-                    <img data-caption="Tech image" class="materialboxed responsive-img" height="650" src="images/nikolay-tarashchenko-748663-unsplash.jpg">
-                </div>
-            </div>
-        </div> 
-        <div class="container section">
-            <div class="row">
-                <div class="col s12 center container section">
-                    <a onclick="displayToast()" class="btn">Toast!</a>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col s12 center container section">
-                    <!-- Modal Trigger -->
-                    <a class="waves-effect waves-light btn modal-trigger" href="#modal1">Eliminar</a>
+        <!--End Sidenav
+        ------------------------------------------------------------------>
 
-                    <!-- Modal Structure -->
-                    <div id="modal1" class="modal">
-                        <div class="modal-content">
-                        <h4>Esta seguro de que desea eliminar el registro?</h4>
-                        <p>Este paso es irreversible.</p>
-                        </div>
-                        <div class="modal-footer">
-                        <a href="#!" class="waves-effect waves-light btn green">Si eliminar!</a>
-                        <a href="#!" class="modal-close waves-effect waves-light btn red">Cancelar</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div> 
-        <div class="container section">
-            <div class="row">
-                <div class="col s12">
-                    <form>
-                        <div class="card-panel section hoverable">
-                            <div class="row">
-                                <div class="input-field s6">
-                                    <input type="text" id="name" name="name" class="validate" required>
-                                    <label for="name">Nombre:</label>
-                                </div>
-                                <div class="input-field s6">
-                                    <input type="text" id="lastname" name="lastname" class="validate" required>
-                                    <label for="lastname">Apellidos:</label>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="input-field col s12">
-                                    <i class="material-icons prefix">email</i>
-                                    <input type="email" name="email" id="email" class="validate" required>
-                                    <label for="email">Correo electronico:</label>
-                                    <span class="helper-text" data-error="Formato equivocado" data-success="Formato correcto"></span>
-                                </div>
-                            </div>
-                            <div class="row center">
-                                <button type="submit" class="btn blue waves-effect waves-light"><i class="material-icons right">save</i> Guardar</button>
-                            </div>
-                        </div>
-                    </form>
-                </div>
-            </div>
-        </div>
-        <div class="container section">
-            <div class="row">
-                <div class="col s12 center">
-                    <div class="row">
-                        <div class="col s12">
-                            <div class="row">
-                                <div class="input-field col s12">
-                                    <i class="material-icons prefix">search</i>
-                                    <input type="text" id="autocomplete-input" class="autocomplete">
-                                    <label for="autocomplete-input">Buscar...</label>
-                                </div>
-                            </div>
-                            <div class="row section">
-                                <div class="col s12 center">
-                                    <div id="resp">
+        <!-- Main
+        ------------------------------------------------------------------>
+        <main>
 
+            <div class="section no-pad-bot">
+                <div class="row">
+                    <!-- Card One
+                    ------------------------------------------------------>
+                    <div class="col s12 m6 l3">
+                        <div class="card blue lighten-1">
+                            <div class="card-content white-text">
+                                <div class="row">
+                                    <div class="col s7">
+                                        <div class="section">
+                                            <a style="background-color: rgba(47, 49, 75, 0.50);" class="btn-floating btn-large waves-effect waves-light"><i class="material-icons">people</i></a>
+                                        </div>
+                                    </div>
+                                    <div class="col s5">
+                                        <h5 class="">Users</h5>
+                                        <div class="right-align">
+                                            <p class="">New</p>
+                                            <p class=""><b>200</b></p>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
+                    <!-- End Card One
+                    ------------------------------------------------------>
+                    <!-- Card Two -->
+                    <div class="col s12 m6 l3">
+                        <div class="card red lighten-1">
+                            <div class="card-content white-text">
+                                <div class="row">
+                                    <div class="col s7">
+                                        <div class="section">
+                                            <a style="background-color: rgba(47, 49, 75, 0.50);" class="btn-floating btn-large waves-effect waves-light"><i class="material-icons">view_module</i></a>
+                                        </div>
+                                    </div>
+                                    <div class="col s5">
+                                        <h5 class="">Inventory</h5>
+                                        <div class="right-align">
+                                            <p class="">Month</p>
+                                            <p class=""><b>40</b></p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End Card Two
+                    ------------------------------------------------------>
+                    <!-- Card Three
+                    ------------------------------------------------------>
+                    <div class="col s12 m6 l3">
+                        <div class="card green lighten-1">
+                            <div class="card-content white-text">
+                                <div class="row">
+                                    <div class="col s7">
+                                        <div class="section">
+                                            <a class="btn-floating btn-large waves-effect waves-light" style="background-color: rgba(47, 49, 75, 0.50); "><i class="material-icons">attach_money</i></a>
+                                        </div>
+                                    </div>
+                                    <div class="col s5">
+                                        <h5 class="">Sales</h5>
+                                        <div class="right">
+                                            <p class="">New</p>
+                                            <p class="">200</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End Card Three
+                    ------------------------------------------------------>
+                    <!-- Card Four
+                    ------------------------------------------------------>
+                    <div class="col s12 m6 l3">
+                        <div class="card amber lighten-1">
+                            <div class="card-content white-text">
+                                <div class="row">
+                                    <div class="col s7">
+                                        <div class="section">
+                                            <a class="btn-floating btn-large waves-effect waves-light" style="background-color: rgba(47, 49, 75, 0.50); "><i class="material-icons">sentiment_very_satisfied</i></a>
+                                        </div>
+                                        <!-- <i class="material-icons" style="font-size:100px">people</i> -->
+                                    </div>
+                                    <div class="col s5">
+                                        <h5 class="">Clients</h5>
+                                        <div class="right">
+                                            <p class="">New</p>
+                                            <p class="">200</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End Card Four
+                    ------------------------------------------------------>
                 </div>
             </div>
-        </div>      
-    <!--JavaScript at end of body for optimized loading-->
-    <script type="text/javascript" src="js/materialize.min.js"></script>
-    <!-- Inicializando -->
-    <script>
-        document.addEventListener('DOMContentLoaded', function() {
-            var elems = document.querySelectorAll('.slider');
-            var instances = M.Slider.init(elems,{
-                interval:2500
+
+            <div class="row">
+                <div class="col s12 l12">
+                    <!-- Collection
+                    ------------------------------------------------------>
+                    <div class="col s12 m6 l6">
+                            <ul class="collection z-depth-3">
+                                <li class="collection-item avatar">
+                                    <img src="images/marcus-vorwaller-334251-unsplash.jpg" alt="" class="circle">
+                                    <span class="title">Notice!</span>
+                                    <p>User <br>
+                                        New user sign up!
+                                    </p>
+                                    <a href="#!" class="secondary-content"><i class="material-icons">person</i></a>
+                                </li>
+                                <li class="collection-item avatar">
+                                    <i class="material-icons circle">folder</i>
+                                    <span class="title">Document</span>
+                                    <p>New Document was generated! <br>
+                                        on sales module
+                                    </p>
+                                    <a href="#!" class="secondary-content"><i class="material-icons">grade</i></a>
+                                </li>
+                                <li class="collection-item avatar">
+                                    <i class="material-icons circle blue">insert_chart</i>
+                                    <span class="title">Report</span>
+                                    <p>New Report was generated! <br>
+                                        On inventory module
+                                    </p>
+                                    <a href="#!" class="secondary-content"><i class="material-icons">view_module</i></a>
+                                </li>
+                                <li class="collection-item avatar">
+                                    <i class="material-icons circle green">attach_money</i>
+                                    <span class="title">Sale!</span>
+                                    <p>New sale was registered! <br>
+                                        On sales module
+                                    </p>
+                                    <a href="#!" class="secondary-content"><i class="material-icons">monetization_on</i></a>
+                                </li>
+                            </ul>
+                    </div>
+                    <!--End Collection
+                    ------------------------------------------------------>
+                    <!-- Collapse
+                    ------------------------------------------------------>
+                    <div class="col s12 m6 l6">
+                            <ul class="collapsible z-depth-3">
+                                <li>
+                                    <div class="collapsible-header">
+                                    <i class="material-icons">view_module</i>
+                                    Inventory
+                                    <span class="new badge"data-badge-caption="Recently">4</span></div>
+                                    <div class="collapsible-body"><p>Lorem ipsum dolor sit amet.</p></div>
+                                </li>
+                                <li>
+                                    <div class="collapsible-header">
+                                    <i class="material-icons">person</i>
+                                    User Accounts
+                                    <span class="badge">1</span></div>
+                                    <div class="collapsible-body"><p>User sign up!</p></div>
+                                </li>
+                                <li>
+                                    <div class="collapsible-header">
+                                    <i class="material-icons">shopping_cart</i>
+                                    Products
+                                    <span class="new badge orange" data-badge-caption="Caution">10</span></div>
+                                    <div class="collapsible-body"><p>Lorem ipsum dolor sit amet.</p></div>
+                                </li>
+                                <li>
+                                    <div class="collapsible-header">
+                                    <i class="material-icons">people</i>
+                                    Providers
+                                    <span class="badge">10</span></div>
+                                    <div class="collapsible-body"><p>Lorem ipsum dolor sit amet.</p></div>
+                                </li>
+                                <li>
+                                    <div class="collapsible-header">
+                                    <i class="material-icons">sentiment_very_satisfied</i>
+                                    Clients
+                                    <span class="new badge blue" data-badge-caption="Today">10</span></div>
+                                    <div class="collapsible-body"><p>Lorem ipsum dolor sit amet.</p></div>
+                                </li>
+                                <li>
+                                    <div class="collapsible-header">
+                                    <i class="material-icons">monetization_on</i>
+                                    Sales
+                                    <span class="new badge red" data-badge-caption="Today">10</span></div>
+                                    <div class="collapsible-body"><p>Lorem ipsum dolor sit amet.</p></div>
+                                </li>
+                            </ul>
+                    </div>
+                    <!--End Collapse
+                    ------------------------------------------------------>
+                </div>
+            </div>
+
+        </main>
+        <!-- End Main
+        ------------------------------------------------------------------>
+
+        <!-- Footer
+        ------------------------------------------------------------------>
+
+        <footer class="page-footer grey darken-3">
+            <div class="container">
+                <div class="section">
+                © 2018 Copyright Text
+                <a class="grey-text text-lighten-4 right" href="#!">More Links</a>
+                </div>
+            </div>
+        </footer>
+
+        <!--End Footer
+        ------------------------------------------------------------------>
+    
+        <!--JavaScript at end of body for optimized loading
+        ------------------------------------------------------------------>
+        <script type="text/javascript" src="js/materialize.min.js"></script>
+        <!--End JavaScript at end of body for optimized loading
+        ------------------------------------------------------------------>
+        <script>
+            document.addEventListener('DOMContentLoaded', function() {
+                
+                M.AutoInit();
             });
-            var elems = document.querySelectorAll('.materialboxed');
-            var instances = M.Materialbox.init(elems);
-            var elems = document.querySelectorAll('.sidenav');
-            var instances = M.Sidenav.init(elems);
-            var elems = document.querySelectorAll('.dropdown-trigger');
-            var instances = M.Dropdown.init(elems);
-            var elems = document.querySelectorAll('.modal');
-            var instances = M.Modal.init(elems);
-            //M.AutoInit();
-        });
-    </script>
-    <script>
-        function displayToast(){
-            M.toast(
-                {
-                    html: '<i class="material-icons">check</i> Operación exitosa!',
-                    displayLength: 1000,
-                    classes: 'blue',
-                    completeCallback: function(){alert('Redirect to...')}
-                }
-            );
-        }
-    </script>
-    <script>
-        //autocomplete field
-        
-        var elems = document.querySelectorAll('.autocomplete');
-        var instances = M.Autocomplete.init(elems,{
-            data: {
-                "Apple": null,
-                "Microsoft": null,
-                "Google": 'https://placehold.it/250x250'
-              },
-              onAutocomplete: function(texto){
-                  console.log('Diste click en '+texto);
-                  resp.innerHTML = "<h3>Seleccionaste el elemento "+texto+"</h3>";
-              }
-        });
-        const resp = document.getElementById('resp');
-    </script>
+        </script>
     </body>
   </html>

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+  <html>
+    <head>
+      <!--Import Google Icon Font-->
+      <link rel="stylesheet" href="css/material-icons.css">
+      <!--Import materialize.css-->
+      <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+      <!--Let browser know website is optimized for mobile-->
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    </head>
+
+    <body>
+        <!-- Main -->
+
+        <div class="container section">
+            <div class="row">
+                <div class="col s12 center container section">
+                    <!-- Table to Emulate a Crud -->
+                    <h1><i class="material-icons" style="font-size:50px">people</i> Users</h1>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>User</th>
+                                <th>Email</th>
+                                <th>Rol</th>
+                                <th>Delete</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Jhon Doe</td>
+                                <td>jhondoe@mail.com</td>
+                                <td>Admin</td>
+                                <td>
+                                    <a class="waves-effect waves-light btn red modal-trigger" href="#modal1">
+                                        <i class="material-icons">delete</i>
+                                    </a>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+
+        <!-- Modal Structure -->
+        <div id="modal1" class="modal">
+            <div class="modal-content">
+            <h4>Are you sure to delete Jhon Doe?</h4>
+            <p>This step is irreversible!.</p>
+            </div>
+            <div class="modal-footer">
+                <a href="#!" class="waves-effect waves-light btn green">Ok Delete!</a>
+                <a href="#!" class="modal-close waves-effect waves-light btn red">Cancel</a>
+            </div>
+        </div>
+        <!-- End Modal Structure -->
+        <!-- End Main -->
+
+    <!--JavaScript at end of body for optimized loading-->
+    <script type="text/javascript" src="js/materialize.min.js"></script>
+    <!-- Inicializando -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            var elems = document.querySelectorAll('.modal');
+            var instances = M.Modal.init(elems);
+        });
+    </script>
+    </body>
+  </html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+  <html>
+    <head>
+      <!--Import Google Icon Font-->
+      <link rel="stylesheet" href="css/material-icons.css">
+      <!--Import materialize.css-->
+      <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+      <!--Let browser know website is optimized for mobile-->
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    </head>
+
+    <body>
+        <!-- Main -->
+        <main class="container section">
+            <div class="row">
+                <div class="col s12">
+                    <form>
+                        <div class="card-panel section hoverable">
+                            <div class="row">
+                                <div class="input-field s6">
+                                    <input type="text" id="name" name="name" class="validate" required>
+                                    <label for="name">Nombre:</label>
+                                </div>
+                                <div class="input-field s6">
+                                    <input type="text" id="lastname" name="lastname" class="validate" required>
+                                    <label for="lastname">Apellidos:</label>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="input-field col s12">
+                                    <i class="material-icons prefix">email</i>
+                                    <input type="email" name="email" id="email" class="validate" required>
+                                    <label for="email">Correo electronico:</label>
+                                    <span class="helper-text" data-error="Formato equivocado" data-success="Formato correcto"></span>
+                                </div>
+                            </div>
+                            <div class="row center">
+                                <button type="submit" class="btn blue waves-effect waves-light"><i class="material-icons right">save</i> Guardar</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </main>
+        <!-- End Main -->
+            
+    <!--JavaScript at end of body for optimized loading-->
+    <script type="text/javascript" src="js/materialize.min.js"></script>
+    </body>
+  </html>
